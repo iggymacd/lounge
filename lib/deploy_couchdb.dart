@@ -55,7 +55,7 @@ Future showResults(result) {
 
 Future uploadFiles(revision, document, dbUrl) {
   print('revision is $revision');
-  if(revision == null){
+  if(revision != null){
     document['_rev'] = revision;
   }
   print('document is ${document['_id']}');
