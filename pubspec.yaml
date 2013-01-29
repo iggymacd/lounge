@@ -1,0 +1,4 @@
+name:  lounge
+description:  A collection of utilities for Dart and CouchDb
+
+dependencies:
