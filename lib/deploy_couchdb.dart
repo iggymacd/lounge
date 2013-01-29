@@ -10,7 +10,7 @@
  *
  *     import 'dart:io';
  *     import 'package:web_ui/component_build.dart';
- *     import 'package:couchdb_deploy/project_deploy_couchdb.dart';
+ *     import 'package:lounge/deploy_couchdb.dart';
  *
  *     main() {
  *       build(new Options().arguments, ['web/index.html']);
