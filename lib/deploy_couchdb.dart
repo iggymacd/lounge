@@ -55,7 +55,9 @@ Future showResults(result) {
 
 Future uploadFiles(revision, document, dbUrl) {
   print('revision is $revision');
-  document['_rev'] = revision;
+  if(revision == null){
+    document['_rev'] = revision;
+  }
   print('document is ${document['_id']}');
   var baseUri = new Uri.fromString('$dbUrl/${document['_id']}');
   var jsonData = stringify(document);
